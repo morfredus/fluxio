@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0-alpha.3] - 2026-10-20
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Factures Logista France : « Facture tabac » (livraisons au prix de vente, remise, net à payer, échéance sous 30 jours au plus tard) et « Facture e-recharge » (produits dématérialisés, échéance imprimée). Les livraisons de tabac facturées sont comparées au bulletin de la Douane dans les statistiques « Tabac (Douane) ».
+- Bulletin mensuel de remises et aides tabac (Douane) : livraisons, remise brute et nette, retenues (licence, allocation viagère), soutiens forfaitaire et exceptionnel, recouvrement, date de mise en paiement. Validation modifiable, statistiques « Tabac (Douane) » (taux de remise, comparaison avec les ventes tabac des Z) et soutiens à recevoir / à acquitter dans le prévisionnel de trésorerie.
+
 ## [0.1.0-alpha.2] - 2026-10-20
 
 **Alpha** : toujours pas éprouvée en conditions réelles. Relancez « Enregistrer de nouveau » sur les anciens relevés si besoin ; vérifiez les chiffres.
