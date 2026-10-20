@@ -24,6 +24,8 @@ mais n'a pas encore servi en vrai : vérifiez les chiffres, gardez une copie de 
   taux de commission, retour aux joueurs), dépenses par fournisseur, banque par mois ; exercice en cours / précédent / tout ; export CSV.
 - Réglages de la société : raison sociale, forme juridique, SIRET, nom dans les libellés bancaires, début de l'exercice
   comptable (fin calculée). Plus aucun nom de société écrit dans le code ; sans réglage, règles génériques de lecture.
+- OCR des PDF scannés (reconnaissance de texte intégrée à Windows, langue française de Windows requise) : les champs de la facture sont proposés, à vérifier ; sans OCR, saisie manuelle.
+- Un document déjà validé se rouvre avec les valeurs saisies (facture, Z), plus avec la lecture automatique du PDF.
 - Sauvegarde et restauration (Fichier → « Sauvegarde et restauration… ») : base complète, sauvegarde par exercice comptable (copie, sans rien
   supprimer : les statistiques restent complètes), import sans effacer ni dupliquer, restauration avec copie de sécurité, sauvegarde automatique
   à la fermeture (une par jour, 10 conservées).

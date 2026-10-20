@@ -8,6 +8,7 @@ cette licence ne s'applique pas aux composants tiers ci-dessous, qui gardent leu
 |---|---|---|
 | **Qt for Python (PySide6)** and **Qt** | graphical interface, PDF viewer | LGPL-3.0 (GNU Lesser General Public License v3) |
 | **pypdf** | reading the text of PDF files | BSD-3-Clause |
+| **pywinrt** (`winrt-*`) | access to the OCR built into Windows | MIT |
 | **PyInstaller** | builds the executable (its bootloader is bundled) | GPL-2.0-or-later with the PyInstaller exception, which allows bundling in programs under any license |
 | **Python** | runtime | PSF License |
 | **SQLite** | local database | Public domain |
