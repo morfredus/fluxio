@@ -1,0 +1,5 @@
+# Fins de ligne : LF dans le depot et dans le dossier de travail, sur tous les systemes.
+* text=auto eol=lf
+*.ps1 text eol=crlf
+*.png binary
+*.ico binary

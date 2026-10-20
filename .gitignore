@@ -1,0 +1,15 @@
+# Compilation
+/build/
+/dist/
+/.venv/
+__pycache__/
+*.pyc
+*.spec
+# Donnees personnelles : jamais dans le depot
+*.db
+*.db-wal
+*.db-shm
+*.pdf
+/donnees/
+# Sorties locales
+*.user
