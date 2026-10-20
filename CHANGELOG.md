@@ -1,5 +1,21 @@
 # Changelog
 
+## [0.1.0-alpha.2] - 2026-10-20
+
+**Alpha** : toujours pas éprouvée en conditions réelles. Relancez « Enregistrer de nouveau » sur les anciens relevés si besoin ; vérifiez les chiffres.
+
+- Relevés Banque Populaire (comptes courant, FDJ, PMU) : lus avec soldes d'ouverture / clôture ; le sens débit / crédit, absent du texte du PDF, est déduit du libellé puis corrigé pour retomber sur les soldes (clic droit pour inverser une opération à la main). Virements American Express rattachés aux ventes du jour. Une banque inconnue passe par une lecture générique (« date, libellé, montant » + soldes) avec le même contrôle.
+- Rapprochement CB : les remises regroupées (week-end, jours fériés) sont comparées au total des Z des jours concernés.
+- Z de caisse « Fin de période » : dates lues (jour de début et de fin) ; au démarrage, les documents déjà enregistrés avec une ancienne lecture (Z sans dates, relevés sans soldes) sont relus depuis leur PDF.
+- Facture de frais bancaires, relevés e-timbres / e-amendes : reconnus comme informations (rien à enregistrer).
+- Z de caisse : le fonds de caisse (argent mis dans le tiroir) est pris en compte dans le contrôle et retiré des espèces comparées aux dépôts bancaires ; un écart reste signalé avec sa valeur (MANQUE ou EXCÉDENT en caisse, à expliquer) et alimente l'onglet Statistiques « Écarts de caisse » (par Z, avec totaux).
+- Nouveaux documents lus : relevé de compte Nickel (opérations et soldes contrôlés), rapport d'activité Nickel (information, rien à enregistrer), relevé de lettres de change LCR (effets à payer, date de règlement). Les soldes des relevés sont enregistrés.
+- « Lire ce document comme… » au-dessus du formulaire : si un document n'est pas reconnu (relevé de banque inconnu, etc.), on peut imposer son type ; lecture générique « date, libellé, montant » pour un relevé inconnu, à vérifier ligne à ligne.
+- Menu Trésorerie : suivi par compte bancaire (soldes, mouvements par mois, opérations, soldes des relevés) et trésorerie avec prévisionnel semaine par semaine (engagé : effets LCR, factures non payées, prélèvements FDJ connus ; estimé : moyennes récentes d'encaissements CB/espèces et de prélèvement FDJ).
+- Logo provisoire dans la barre de titre et sur l'exécutable (`resources/fluxio.png` et `fluxio.ico`, générés par `scripts/faire_logo.py` : remplacez ces deux fichiers pour changer de logo).
+- Compilation : les DLL d'exécution Visual C++ sont copiées à la racine de `dist\Fluxio\_internal` (le programme tourne sans Visual C++ installé).
+- Lecture des factures : référence (« Référence : … »), date en toutes lettres (« le 02 octobre 2022 »), règlement SEPA / « à réception » (échéance = date de facture), fournisseur proposé d'après le nom du fichier.
+
 ## [0.1.0-alpha.1] - 2026-10-20
 
 **Alpha** : première version autonome (projet séparé du classeur Excel de suivi). Elle fonctionne sur les documents de test
