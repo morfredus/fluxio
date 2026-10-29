@@ -1,7 +1,17 @@
 # Changelog
 
-## [Unreleased]
+## [0.1.0-alpha.5] - 2026-10-30
 
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- **Échéancier** (Trésorerie → Échéancier) : engagements récurrents ou datés qui ne passent pas par une facture mensuelle : emprunt, loyer, **locations de matériel livrées avec leur échéancier**, salaires, cotisations, impôts, abonnements, échéanciers de fournisseurs. Assistant **emprunt avec différé** : échéances reportées au départ (totalement, ou avec une mensualité réduite) tandis que l'**assurance du prêt reste prélevée dès le départ**. Détection des prélèvements récurrents dans l'historique bancaire (à ajouter en un clic). Chaque échéance passée est pointée avec la banque (payée / en retard).
+- **Prévisionnel de trésorerie** : intègre l'échéancier (sans doublon avec les factures et effets déjà connus), la TVA estimée à payer (régime mensuel ou trimestriel réglé dans Réglages) et affiche le **disponible après engagements à 30 jours**.
+- **Pointage de la banque** (Rapprochements) : chaque opération est justifiée (facture rapprochée, échéancier, effet LCR, règlement FDJ, mouvement de caisse) ou classée par une **règle de catégorie** (nature, activité, fonds de tiers) ; le reste à pointer est listé, avec clic droit pour créer une règle ou ajouter l'opération à l'échéancier.
+- **Tableau de bord** à l'ouverture : trésorerie, sorties à 7 et 30 jours, disponible après engagements, solde projeté, chiffre d'affaires comparé à l'année précédente, alertes, prochaines échéances, soldes par compte. **Contrôles d'exhaustivité** : jours sans Z (jours de fermeture réglables ou déduits), relevés bancaires manquants ou à la chaîne de soldes rompue, semaines FDJ manquantes, factures échues sans paiement, manques de caisse, opérations à pointer, documents pas encore envoyés au comptable.
+- **TVA** : HT et TVA des factures (facultatifs, lus quand le PDF les donne), TVA par taux des Z de caisse ; onglet Statistiques « TVA » (collectée, déductible, à décaisser) ; les Z déjà enregistrés sont relus au démarrage pour en extraire la TVA.
+- **Statistiques** : « CA mensuel (N / N-1) » et « Rentabilité par activité » (ventes des Z et charges payées affectées par règle).
+- **Comptable** : statut par document (à envoyer / envoyé / comptabilisé), et menu Fichier → « Export pour le comptable… » (journaux de ventes, d'achats et de banque, opérations sans justificatif, en CSV RFC 4180).
+- Structure du code : les éléments d'interface partagés sont dans `ui_commun.py`, les nouveaux écrans dans `ui_*.py`.
 - Export et impression : trois boutons clairs (« Exporter en CSV… », « Exporter en PDF… », « Imprimer… » avec la boîte de dialogue d'impression de Windows) et mémorisation du dernier dossier utilisé pour les exports.
 
 - Rapprochement factures ↔ relevés : clic droit sur une facture pour confirmer un rapprochement « probable », le rapprocher à la main avec un autre débit bancaire (liste triée par proximité du montant) ou le dé-rapprocher, avant d'enregistrer. Les décisions sont enregistrées et rejouées à la réouverture ; enregistrer plusieurs fois ne crée plus de doublons.
