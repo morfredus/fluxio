@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased]
+
+- Export et impression : trois boutons clairs (« Exporter en CSV… », « Exporter en PDF… », « Imprimer… » avec la boîte de dialogue d'impression de Windows) et mémorisation du dernier dossier utilisé pour les exports.
+
+- Rapprochement factures ↔ relevés : clic droit sur une facture pour confirmer un rapprochement « probable », le rapprocher à la main avec un autre débit bancaire (liste triée par proximité du montant) ou le dé-rapprocher, avant d'enregistrer. Les décisions sont enregistrées et rejouées à la réouverture ; enregistrer plusieurs fois ne crée plus de doublons.
+
+- Export des tableaux : boutons « Exporter en CSV… » et « Imprimer / PDF… » sur la trésorerie et le prévisionnel, le suivi par compte, les statistiques, l'historique, les rapprochements (caisse ↔ banque, factures ↔ relevés), les dépôts d'espèces et la FDJ de la semaine. CSV conforme à la RFC 4180 (virgule, guillemets, CRLF, UTF-8, dates AAAA-MM-JJ, nombres avec point décimal) ; PDF A4 paysage avec société et date d'édition. L'ancien export CSV à point-virgule des statistiques est remplacé.
+- Écran adapté au contexte : « Lire ce document comme » et « Valider et enregistrer » n'apparaissent que devant un document, plus devant la trésorerie, les statistiques, etc.
+- Icône : retour à l'icône de l'exécutable pour la barre des tâches (plus d'identité Windows explicite).
+
+- Saisie des dates : 10012025, 100125, 10.01.2025, 10/01/25, 10-1-25… sont toutes comprises et remises en JJ/MM/AAAA dès qu'on quitte la zone (factures, effets LCR, bulletin Douane, dépôts d'espèces, historique, exercice des réglages) ; le mois du bulletin accepte 032026, 3/26… (stockage inchangé : AAAA-MM-JJ).
+
 ## [0.1.0-alpha.4] - 2026-10-29
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
