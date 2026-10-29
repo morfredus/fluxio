@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased]
+
+- Qualité du code : formatage automatique (ruff, 150 colonnes, `pyproject.toml`), contrôles statiques sans avertissement, un seul lecteur de montants (`formats.montant`) au lieu de six copies, lecteur Nickel simplifié et testé, suppression du code mort.
+- Au démarrage, tout ce qui est enregistré est disponible : les écrans Rapprochements (caisse ↔ banque, factures ↔ relevés, dépôts), FDJ de la semaine, suivi par compte, trésorerie et statistiques partent de TOUTE la base, sans recharger les PDF (les documents de la liste de travail gardent la priorité, avec leurs corrections). Les relevés enregistrent désormais leurs opérations complètes.
+- Nouveau menu « Historique » : recherche dans toute l'activité enregistrée, quelle que soit l'année (texte, montant exact ou fourchette, jour ou période, nature : banque, factures, Z de caisse, FDJ, effets LCR, Douane, dépôts), somme des résultats, double-clic pour ouvrir le document. « Documents enregistrés » : bouton « Afficher la sélection dans la liste ».
+- Icône : identité propre à Fluxio pour la barre des tâches de Windows (AppUserModelID) et icône .ico multi-tailles pour la fenêtre.
+- Renommer le fichier d'un document depuis Fluxio (clic droit sur la liste ou menu Fichier) : nom proposé d'après la facture (montant corrigé, style « Fournisseur - 840,94.pdf » conservé), refus d'écraser un fichier existant, liste et base mises à jour. Le PDF affiché est désormais chargé en mémoire, donc le fichier n'est plus verrouillé par Fluxio.
+- Factures relevés SED (règlement par LCR) : numéro, date, total TTC, échéance et total HT lus ; garde-fou général : alerte quand le montant noté à la fin du nom du fichier diffère du montant lu.
+- Factures Keolis Bordeaux Métropole (TBM) : titres de transport vendus, commission du dépositaire (HT, TVA, TTC), net à payer prélevé et échéance ; contrôle ventes − commission = net. La commission retenue apparaît dans les statistiques « Recettes à notre crédit ».
+- Facture : autocomplétion du champ Fournisseur avec les fournisseurs déjà enregistrés (n'importe quelle partie du nom, sans tenir compte de la casse, un seul nom par fournisseur).
+- Pièces à notre crédit : les avis de virement (relais de colis Colis Privé) sont lus comme des encaissements et non comme des dépenses : exclus des dépenses par fournisseur et du prévisionnel de dépenses, rapprochés des virements reçus en banque, onglet Statistiques « Recettes à notre crédit », virements attendus dans le prévisionnel de trésorerie.
+
 ## [0.1.0-alpha.3] - 2026-10-20
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.

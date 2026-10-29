@@ -1,0 +1,13 @@
+# Outils de développement de Fluxio (le programme lui-même n'en dépend pas).
+# Formatage et contrôle :  python -m ruff format .   puis   python -m ruff check .
+[tool.ruff]
+line-length = 150
+target-version = "py312"
+extend-exclude = ["build", "dist"]
+
+[tool.ruff.lint]
+select = ["F", "E4", "E7", "E9", "B", "SIM", "C4"]
+ignore = [
+    "E741",  # la variable « l » (ligne de texte) est utilisée partout dans les lecteurs de PDF
+    "B905",  # zip() sans strict= : les listes comparées sont toujours de même longueur ou volontairement tronquées
+]
