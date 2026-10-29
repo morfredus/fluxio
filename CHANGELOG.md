@@ -1,6 +1,8 @@
 # Changelog
 
-## [Unreleased]
+## [0.1.0-alpha.4] - 2026-10-29
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
 
 - Qualité du code : formatage automatique (ruff, 150 colonnes, `pyproject.toml`), contrôles statiques sans avertissement, un seul lecteur de montants (`formats.montant`) au lieu de six copies, lecteur Nickel simplifié et testé, suppression du code mort.
 - Au démarrage, tout ce qui est enregistré est disponible : les écrans Rapprochements (caisse ↔ banque, factures ↔ relevés, dépôts), FDJ de la semaine, suivi par compte, trésorerie et statistiques partent de TOUTE la base, sans recharger les PDF (les documents de la liste de travail gardent la priorité, avec leurs corrections). Les relevés enregistrent désormais leurs opérations complètes.
