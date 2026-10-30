@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.0-alpha.7] - 2026-10-30
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Écran de démarrage : la version affichée vient toujours du fichier `VERSION` (dessinée à l'exécution sur l'écran Qt, et image de PyInstaller régénérée à chaque compilation).
+
 ## [0.1.0-alpha.6] - 2026-10-30
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
