@@ -1,5 +1,14 @@
 # Changelog
 
+## [Unreleased]
+
+## [0.1.0-alpha.9] - 2026-10-30
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Factures Orange (Livebox Pro, mobiles) : fournisseur, numéro, date, échéance du prélèvement, TTC, HT et TVA lus (les libellés et leurs valeurs sont séparés dans le texte du PDF). Elles n'étaient pas décodées avant la refonte du code non plus : ce n'est pas une régression.
+- Scripts Windows (`test`, `build`, `run-sandbox`) : choix automatique d'un Python qui a PySide6 et pypdf (`FLUXIO_PYTHON`, puis `py -3.12`, `py -3`, `python`), au lieu du premier `python` du PATH (depuis Git Bash c'était celui de MSYS2, sans les modules).
+
 ## [0.1.0-alpha.8] - 2026-10-30
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
