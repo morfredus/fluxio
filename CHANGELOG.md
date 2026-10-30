@@ -1,5 +1,11 @@
 # Changelog
 
+## [0.1.0-alpha.8] - 2026-10-30
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Qualité du code (deuxième passe, sans changement de comportement : 149 documents de test relus à l'identique, prévisionnel identique) : une seule version des outils communs (`formats.norm`, `jour`, `milliers`, `mois_numero`) au lieu de copies dans plusieurs modules ; regroupement des familles du Z (`familles.py`) et TVA par mois (`tva.py`) sortis des lecteurs de PDF ; les plus longues fonctions (lecture des factures et des Z, enregistrement d'un document, prévisionnel) découpées en petites fonctions ; `fluxio.py` (2 800 lignes) découpé en `ui_formulaires.py`, `ui_rapprochements.py`, `ui_vues.py`, `ui_dialogues.py` ; test d'architecture (pas de cycle d'imports, métier indépendant de l'interface).
+
 ## [0.1.0-alpha.7] - 2026-10-30
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
