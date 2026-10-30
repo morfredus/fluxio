@@ -1,5 +1,12 @@
 # Changelog
 
+## [0.1.0-alpha.6] - 2026-10-30
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Écran de démarrage « Chargement de vos documents… / Loading your documents… » (logo, version) affiché dès le lancement de l'exécutable, avant même le démarrage du programme, et retiré quand la fenêtre est prête (`resources/splash.png`, généré par `scripts/faire_splash.py`). L'écran affiche ensuite une barre et un pourcentage de progression (base, vérification des documents, fenêtre, tableau de bord). Un second lancement pendant le chargement n'ouvre plus de deuxième fenêtre : il prévient que Fluxio est déjà ouvert.
+- Filtres par cases à cocher sur les écrans de rapprochement (factures ↔ relevés : rapprochées / probables / non rapprochées ; caisse ↔ banque : validées / prêtes à valider / en attente ; FDJ de la semaine ; dépôts d'espèces ; pointage de la banque ; échéancier) avec le nombre de lignes de chaque état. Les lignes masquées ne sont ni exportées ni imprimées.
+
 ## [0.1.0-alpha.5] - 2026-10-30
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
