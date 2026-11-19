@@ -2,6 +2,29 @@
 
 ## [Unreleased]
 
+## [0.1.0-alpha.11] - 2026-11-19
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Outils de test : la suite de documents fictifs (`.docs_test/suite_fictive`, `scripts/windows/suite-test.ps1`) passe de 53 à 125 documents + 36 factures électroniques : relevés FDJ (grattage et tirage) et factures de commissions sur deux semaines, bulletin Douane d'avril, relevé bancaire avec comptes FDJ et PMU, un Z par jour en mars 2025 et mars 2026, et un `LISEZ-MOI.txt` qui dit quel dossier éprouve quel écran. Le prélèvement FDJ du relevé de mai correspond à la première semaine FDJ.
+- OCR : la reconnaissance des scans ne plante plus (violation d'accès) quand elle est lancée hors de l'application, par exemple par les scripts de test.
+## [0.1.0-alpha.10] - 2026-11-19
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Installateur Windows `Fluxio-<version>-win64-setup.exe` (Inno Setup, `installer/fluxio.iss`) en plus du zip portable : installation par utilisateur sans droits administrateur, raccourcis, mise à jour par-dessus, désinstallation propre ; les données (`%APPDATA%\Fluxio`) ne sont jamais touchées. `package-win.ps1` le produit (`-SkipInstaller` pour s'en passer) et la publication de la release le joint avec le zip.
+- Reconnaissance du type de document par scores (`reconnaissance.py`) au lieu d'une suite de tests sur des titres exacts : chaque type cherche des indices (titres, soldes, TTC, échéance…), le meilleur score l'emporte, et un document douteux est signalé « incertain » avec les indices trouvés (lecture « facture » conservée, « Lire comme… » pour corriger). Les types déjà reconnus le sont à l'identique.
+- Documents reconnus mais sans rien à enregistrer, mis de côté avec un message (« Lire comme… » permet de les forcer) : bordereaux de livraison, de crédit et de rappel de la presse, relevés de presse du dépositaire, relevés de compte fournisseur, récapitulatifs de frais d'encaissement par carte, contrats et avenants, courriers. Ils étaient lus comme des factures vides.
+- Détection d'un XML de facture électronique (Factur-X, ZUGFeRD, UBL, CII) embarqué dans le PDF, et d'un PDF dont le texte est trop pauvre pour être lu (passage par l'OCR). 
+- Factures électroniques : le XML embarqué dans le PDF (Factur-X, ZUGFeRD) est lu pour remplir la facture (fournisseur, numéro, dates, échéance, TTC / HT / TVA, mode de règlement, acompte et reste à payer, avoir en négatif), sans deviner dans le texte ; il est vérifié (HT + TVA = TTC, somme des lignes) et comparé au texte visible du PDF (alerte si le TTC diffère). Quand le XML n'a pas l'échéance (profil MINIMUM), elle est reprise du texte et signalée. CII et UBL (Invoice / CreditNote) sont lus aussi (`lecteur_facture_xml.py`) ; les XML piégés (DTD, entités) sont refusés.
+- Facture avec acompte (facture électronique) : le prévisionnel de trésorerie, l'alerte « factures échues » et le rapprochement bancaire utilisent le reste à payer, pas le TTC total (une facture soldée par l'acompte ne figure plus dans les sorties). Si le TTC est corrigé à la main dans le formulaire, le reste à payer suit.
+- Lecture du texte des factures sans XML : fournisseur d'après la raison sociale imprimée (forme juridique, avant le bloc « Adressé à » ; la raison sociale des réglages n'est jamais prise pour un fournisseur), échéance imprimée (« Échéance : », « à régler avant le », « Prélèvement le ») ou calculée d'après les conditions de paiement (« 45 jours fin de mois », « à 30 jours date de facture », « sous 8 jours », « à réception »), mode de règlement (virement, chèque, LCR, prélèvement, espèces, payée par carte), avoir enregistré en négatif avec son propre numéro. Un taux de TVA (« Montant TTC 5,50 % ») n'est plus pris pour un montant.
+- Factures et avoirs du distributeur de presse (BDP : « Facture FRP… », « Avoir ARP… ») : lecteur dédié (numéro, date, TTC, HT, TVA, règlement en une ou plusieurs échéances, contrôles de cohérence). Leur montant était faux (un taux de TVA) avant.
+- Prêts : le tableau d'amortissement de la banque (achat de la boutique, matériel…) est reconnu (type « Prêt ») et lu : capital, taux, durée, différé, assurance, jour de prélèvement, première mensualité normale et mensualité pendant le différé, avec contrôle ligne par ligne et du capital restant dû. Valider crée l'emprunt dans l'échéancier (assurance, mensualités du différé, mensualités normales ; remplace une validation précédente) pour le pointage avec les prélèvements de la banque.
+- Z de caisse avec un manque ou un excédent : l'écart n'est plus faussé par la lecture « quantité collée au montant » (un manque de 18,50 € s'affichait comme un excédent de plusieurs centaines de milliers d'euros). Un document court mais lisible n'est plus envoyé à l'OCR (et sans OCR le texte est gardé). Le relevé Caisse d'Épargne indique sa banque.
+- Fenêtre : elle tient sur les petits écrans (largeur minimale 1 609 px → environ 710 px ; taille adaptée à l'écran disponible).
+- Outils de développement : `scripts/generer_suite_test.py` (53 documents fictifs couvrant les cas de Fluxio : Z, relevés Banque Populaire / Caisse d'Épargne / Nickel / banque inconnue, LCR, frais de banque, prêt, fournisseurs, presse, factures électroniques, contrat, courrier, scan, fichiers cassés) et `scripts/evaluer_suite.py` (les fait lire par Fluxio et compare à l'attendu) ;  `scripts/evaluer_corpus.py` (justesse du type et des champs sur un dossier de PDF, comparaison avant / après) et `scripts/generer_factures_test.py` (factures électroniques fictives avec valeurs attendues).
+
 ## [0.1.0-alpha.9] - 2026-10-30
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.

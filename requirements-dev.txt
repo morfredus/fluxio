@@ -1,0 +1,3 @@
+# Outils de developpement (Fluxio lui-meme n'en depend pas) : pip install -r requirements-dev.txt
+reportlab>=4.0   # fabrique les PDF de la suite de test (scripts/generer_suite_test.py)
+ruff             # formatage et controle du code

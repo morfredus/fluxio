@@ -10,7 +10,7 @@ Everything stays on your computer in a local SQLite database: no account, no clo
 
 ## Download
 
-Get the latest **`Fluxio-<version>-win64-portable.zip`** from the [Releases](../../releases) page, unzip it anywhere and run `Fluxio.exe`. No installation.
+Get the latest release from the [Releases](../../releases) page: either **`Fluxio-<version>-win64-setup.exe`** (installer, per user, no administrator rights needed) or **`Fluxio-<version>-win64-portable.zip`** (unzip anywhere and run `Fluxio.exe`, no installation). Your data stays in `%APPDATA%\Fluxio` in both cases, and is never removed by an update or an uninstall.
 
 - The program is **not code-signed**: Windows SmartScreen may warn on the first run.
 - Your data lives in `%APPDATA%\Fluxio\fluxio.db`, outside the program folder: updating never touches it. To back up, copy that file.

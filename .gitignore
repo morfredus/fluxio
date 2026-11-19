@@ -13,3 +13,4 @@ __pycache__/
 /donnees/
 # Sorties locales
 *.user
+/.docs_test/

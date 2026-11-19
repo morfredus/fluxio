@@ -10,7 +10,7 @@ Tout reste sur votre ordinateur, dans une base SQLite locale : pas de compte, pa
 
 ## Téléchargement
 
-Récupérez le dernier **`Fluxio-<version>-win64-portable.zip`** sur la page [Releases](../../releases), dézippez-le où vous voulez et lancez `Fluxio.exe`. Aucune installation.
+Récupérez la dernière version sur la page [Releases](../../releases) : soit **`Fluxio-<version>-win64-setup.exe`** (installateur, par utilisateur, sans droits administrateur), soit **`Fluxio-<version>-win64-portable.zip`** (dézippez où vous voulez et lancez `Fluxio.exe`, aucune installation). Vos données restent dans `%APPDATA%\Fluxio` dans les deux cas et ne sont jamais supprimées par une mise à jour ou une désinstallation.
 
 - Le programme n'est **pas signé** : SmartScreen peut avertir au premier lancement.
 - Vos données sont dans `%APPDATA%\Fluxio\fluxio.db`, hors du dossier du programme : une mise à jour n'y touche jamais. Pour sauvegarder, copiez ce fichier.
