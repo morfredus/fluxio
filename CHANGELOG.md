@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## [0.1.0-alpha.14] - 2026-11-19
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Les documents ajoutés à la liste de gauche mais pas encore validés sont retrouvés au lancement suivant (inutile de les réimporter) : la liste est mémorisée dans la base à chaque ajout, retrait, renommage, validation et à la fermeture ; un fichier déplacé ou supprimé entre-temps est simplement ignoré. Une fois validé, un document n'est plus dans la liste d'attente (il se retrouve dans l'Historique).
+## [0.1.0-alpha.13] - 2026-11-19
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Correction : après « Retirer de la liste », « Supprimer de la base… » (clic droit), la suppression d'un ou de tous les documents (Documents enregistrés) ou une restauration, la fenêtre se met à jour : liste, formulaire affiché, PDF (fermé quand la liste est vide) et écran de synthèse ouvert (statistiques, historique, comptes, trésorerie, échéancier, pointage, tableau de bord, rapprochements) sont recalculés au lieu de garder les anciennes données.
+## [0.1.0-alpha.12] - 2026-11-19
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Correction : devant un tableau d'amortissement de prêt, le bouton « Valider et enregistrer » (et « Lire ce document comme ») n'apparaissait pas : le prêt ne pouvait pas être enregistré dans l'échéancier.
 ## [0.1.0-alpha.11] - 2026-11-19
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
