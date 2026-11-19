@@ -4,7 +4,7 @@
 
 Fluxio est une application Windows autonome pour les petits commerces : bar, tabac, FDJ, PMU, hôtel. On lui donne les PDF qu'on a déjà : Z de caisse, factures fournisseurs, relevés bancaires, relevés FDJ. Elle les lit, montre ce qu'elle a compris à côté du PDF d'origine, et on corrige avant de valider.
 
-Une fois les documents validés, elle les rapproche : factures et débits bancaires, CB encaissées et remises CB créditées par la banque, dépôts d'espèces et dépôts en banque, règlement FDJ de la semaine et prélèvement du mercredi. Elle calcule aussi des statistiques : ventes par famille et par mois, résultats FDJ par jeu, dépenses par fournisseur, mouvements bancaires.
+Une fois les documents validés, elle les rapproche : factures et débits bancaires, CB encaissées et remises CB créditées par la banque, dépôts d'espèces et dépôts en banque, règlement FDJ de la semaine et prélèvement du mercredi. Elle calcule aussi des statistiques : ventes par famille et par mois (avec comparaison N / N-1), résultats FDJ par jeu, dépenses par fournisseur, mouvements bancaires, TVA et rentabilité. Elle suit les engagements (emprunts avec différé et assurance, locations de matériel, loyers), propose une trésorerie prévisionnelle et prépare l'export pour le comptable.
 
 Tout reste sur votre ordinateur, dans une base SQLite locale : pas de compte, pas de cloud.
 
@@ -14,6 +14,8 @@ Récupérez la dernière version sur la page [Releases](../../releases) : soit *
 
 - Le programme n'est **pas signé** : SmartScreen peut avertir au premier lancement.
 - Vos données sont dans `%APPDATA%\Fluxio\fluxio.db`, hors du dossier du programme : une mise à jour n'y touche jamais. Pour sauvegarder, copiez ce fichier.
+- Les PDF ajoutés à la liste mais pas encore validés réapparaissent au lancement suivant : inutile de les réimporter.
+- La liste de gauche se filtre : case « Seulement les non validés » et bouton pour masquer ou afficher les documents « Information ».
 - La langue (français / anglais) se choisit dans les réglages et s'applique au prochain lancement.
 
 ## Licence

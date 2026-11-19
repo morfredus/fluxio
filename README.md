@@ -4,7 +4,7 @@
 
 Fluxio is a standalone Windows application for small shops such as a bar, tobacconist, lottery and betting counter or hotel. Drop in the PDFs you already have: cash-register Z reports, supplier invoices, bank statements and lottery (FDJ) statements. Fluxio reads them, shows what it understood next to the original PDF, and lets you correct anything before you validate.
 
-Once documents are validated it reconciles them: invoices against bank debits, daily card takings against the card batches credited by the bank, cash deposits against bank deposits, and the weekly lottery settlement against the Wednesday debit. It also builds statistics: sales by family and month, lottery results by game, supplier spending and bank movements.
+Once documents are validated it reconciles them: invoices against bank debits, daily card takings against the card batches credited by the bank, cash deposits against bank deposits, and the weekly lottery settlement against the Wednesday debit. It also builds statistics: sales by family and month (with year-on-year comparison), lottery results by game, supplier spending, bank movements, VAT and profitability. It tracks commitments (loans with deferral and insurance, equipment rentals, rents), projects your cash week by week and prepares the export for your accountant.
 
 Everything stays on your computer in a local SQLite database: no account, no cloud.
 
@@ -12,6 +12,8 @@ Everything stays on your computer in a local SQLite database: no account, no clo
 
 Get the latest release from the [Releases](../../releases) page: either **`Fluxio-<version>-win64-setup.exe`** (installer, per user, no administrator rights needed) or **`Fluxio-<version>-win64-portable.zip`** (unzip anywhere and run `Fluxio.exe`, no installation). Your data stays in `%APPDATA%\Fluxio` in both cases, and is never removed by an update or an uninstall.
 
+- PDFs added to the list but not yet validated come back in the list the next time you start Fluxio, so you do not have to import them again.
+- The left-hand list can be filtered: a "Not yet validated only" check box and a button to hide or show the "Information" documents.
 - The program is **not code-signed**: Windows SmartScreen may warn on the first run.
 - Your data lives in `%APPDATA%\Fluxio\fluxio.db`, outside the program folder: updating never touches it. To back up, copy that file.
 - The language (French / English) is chosen in the settings and applied at the next start.

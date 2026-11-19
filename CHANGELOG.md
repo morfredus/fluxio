@@ -2,27 +2,48 @@
 
 ## [Unreleased]
 
+## [0.1.0-alpha.17] - 2026-11-19
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Liste de gauche : une case « Seulement les non validés » (décochée, tous les fichiers ; cochée, seulement ceux pas encore enregistrés dans la base) et un bouton « Masquer / Afficher les « Information » » (courriers, contrats, bordereaux… lus mais mis de côté). Les deux se combinent ; rien n'est retiré de la liste, seul l'affichage change, et la liste mémorisée pour le prochain lancement n'est pas modifiée.
+## [0.1.0-alpha.16] - 2026-11-19
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Ajout d'un PDF déjà présent dans la liste : le message dit maintenant avec quel fichier il a le même contenu (« Déjà dans la liste : x.pdf (même contenu que y.pdf) ») et sélectionne ce fichier. Deux PDF au contenu strictement identique ne sont comptés qu'une fois, même sous des noms différents.
+- Bouton « Quitter » à l'extrémité droite de la barre de menu (en plus de Fichier → Quitter).
+- Jeu de test : les PDF `e_timbres_avril` et `e_amendes_avril` étaient identiques octet pour octet ; ils sont maintenant distincts.
+## [0.1.0-alpha.15] - 2026-11-19
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Correction : « Supprimer de la base… » (clic droit ou menu Fichier) et la suppression dans « Documents enregistrés » sortent aussi le document de la liste de gauche (avant, il y restait, seule la coche ✔ disparaissait). Un document qui n'est pas dans la base (information, erreur, pas encore validé) est simplement retiré de la liste, sans message d'erreur.
 ## [0.1.0-alpha.14] - 2026-11-19
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
 
 - Les documents ajoutés à la liste de gauche mais pas encore validés sont retrouvés au lancement suivant (inutile de les réimporter) : la liste est mémorisée dans la base à chaque ajout, retrait, renommage, validation et à la fermeture ; un fichier déplacé ou supprimé entre-temps est simplement ignoré. Une fois validé, un document n'est plus dans la liste d'attente (il se retrouve dans l'Historique).
+
 ## [0.1.0-alpha.13] - 2026-11-19
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
 
 - Correction : après « Retirer de la liste », « Supprimer de la base… » (clic droit), la suppression d'un ou de tous les documents (Documents enregistrés) ou une restauration, la fenêtre se met à jour : liste, formulaire affiché, PDF (fermé quand la liste est vide) et écran de synthèse ouvert (statistiques, historique, comptes, trésorerie, échéancier, pointage, tableau de bord, rapprochements) sont recalculés au lieu de garder les anciennes données.
+
 ## [0.1.0-alpha.12] - 2026-11-19
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
 
 - Correction : devant un tableau d'amortissement de prêt, le bouton « Valider et enregistrer » (et « Lire ce document comme ») n'apparaissait pas : le prêt ne pouvait pas être enregistré dans l'échéancier.
+
 ## [0.1.0-alpha.11] - 2026-11-19
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
 
 - Outils de test : la suite de documents fictifs (`.docs_test/suite_fictive`, `scripts/windows/suite-test.ps1`) passe de 53 à 125 documents + 36 factures électroniques : relevés FDJ (grattage et tirage) et factures de commissions sur deux semaines, bulletin Douane d'avril, relevé bancaire avec comptes FDJ et PMU, un Z par jour en mars 2025 et mars 2026, et un `LISEZ-MOI.txt` qui dit quel dossier éprouve quel écran. Le prélèvement FDJ du relevé de mai correspond à la première semaine FDJ.
 - OCR : la reconnaissance des scans ne plante plus (violation d'accès) quand elle est lancée hors de l'application, par exemple par les scripts de test.
+
 ## [0.1.0-alpha.10] - 2026-11-19
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
