@@ -2,6 +2,11 @@
 
 ## [Unreleased]
 
+## [0.1.0-alpha.21] - 2026-11-20
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Lancement : la fenêtre de Fluxio prend le focus et passe devant les autres une fois chargée, même si vous avez cliqué ailleurs pendant l'écran de chargement (avant, elle pouvait s'ouvrir derrière, avec seulement l'icône qui clignotait dans la barre des tâches). Windows interdit à une application de voler le focus : la fenêtre est brièvement placée « toujours au-dessus » puis remise normalement, et activée.
 ## [0.1.0-alpha.20] - 2026-11-20
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
