@@ -15,6 +15,7 @@ Récupérez la dernière version sur la page [Releases](../../releases) : soit *
 - Le programme n'est **pas signé** : SmartScreen peut avertir au premier lancement.
 - Vos données sont dans `%APPDATA%\Fluxio\fluxio.db`, hors du dossier du programme : une mise à jour n'y touche jamais. Pour sauvegarder, copiez ce fichier.
 - Les PDF ajoutés à la liste mais pas encore validés réapparaissent au lancement suivant : inutile de les réimporter.
+- Les exports CSV demandent le séparateur de colonnes : virgule (norme) ou point-virgule (Excel en français) ; ce choix peut aussi être fixé dans les réglages.
 - La liste de gauche se filtre : case « Seulement les non validés » et bouton pour masquer ou afficher les documents « Information ».
 - La langue (français / anglais) se choisit dans les réglages et s'applique au prochain lancement.
 

@@ -13,6 +13,7 @@ Everything stays on your computer in a local SQLite database: no account, no clo
 Get the latest release from the [Releases](../../releases) page: either **`Fluxio-<version>-win64-setup.exe`** (installer, per user, no administrator rights needed) or **`Fluxio-<version>-win64-portable.zip`** (unzip anywhere and run `Fluxio.exe`, no installation). Your data stays in `%APPDATA%\Fluxio` in both cases, and is never removed by an update or an uninstall.
 
 - PDFs added to the list but not yet validated come back in the list the next time you start Fluxio, so you do not have to import them again.
+- CSV exports ask which column separator to use: comma (standard) or semicolon (French-language Excel); the choice can also be fixed in the settings.
 - The left-hand list can be filtered: a "Not yet validated only" check box and a button to hide or show the "Information" documents.
 - The program is **not code-signed**: Windows SmartScreen may warn on the first run.
 - Your data lives in `%APPDATA%\Fluxio\fluxio.db`, outside the program folder: updating never touches it. To back up, copy that file.

@@ -2,6 +2,21 @@
 
 ## [Unreleased]
 
+## [0.1.0-alpha.20] - 2026-11-20
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Réglages : nouveau réglage « Séparateur des exports CSV » : « Demander à chaque export » (comportement de l'alpha.19, par défaut), « Toujours la virgule » ou « Toujours le point-virgule » (plus aucune question à l'export).
+## [0.1.0-alpha.19] - 2026-11-20
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Export CSV : Fluxio demande le séparateur de colonnes à chaque export (tableaux et journaux pour le comptable) : virgule (norme RFC 4180, nombres avec le point, proposée par défaut) ou point-virgule (Excel en français, nombres avec la virgule décimale pour qu'Excel les reconnaisse comme des nombres). Le dernier choix est proposé la fois suivante ; « Annuler » interrompt l'export.
+## [0.1.0-alpha.18] - 2026-11-20
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Correction : les exports CSV ouverts dans Excel affichaient des caractères étranges (« MÃ©tropole » au lieu de « Métropole ») : le fichier est maintenant écrit en UTF-8 avec marque BOM, que reconnaît Excel (les autres outils la lisent aussi sans problème). Concerne tous les exports de tableaux et les journaux pour le comptable.
 ## [0.1.0-alpha.17] - 2026-11-19
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
