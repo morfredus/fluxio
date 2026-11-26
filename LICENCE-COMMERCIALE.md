@@ -2,7 +2,7 @@
 
 Fluxio is published under the **PolyForm Noncommercial 1.0.0** license (file `LICENSE`): non-commercial use is free. **Use by a company or shop in the course of its business is commercial use**: it requires the license described below, granted by the author, Frédéric Biron (the "Licensor"), as a **named license file** (`licence.fluxio`) that the shop installs in Fluxio.
 
-For now, commercial licenses are **free of charge** and granted to a **selected panel** of shops. This page describes the conditions that apply to those licenses.
+Commercial licenses are **free of charge** and granted to a **selection of shops**. This page describes the conditions that apply to those licenses.
 
 *(The French version, `LICENCE-COMMERCIALE_fr.md`, is the reference text.)*
 
@@ -12,7 +12,7 @@ The license is granted to a company or sole trader (the "Licensee"), identified 
 
 ## 2. Grant
 
-The Licensor grants the Licensee a **non-exclusive, personal and non-transferable** right to use Fluxio, in its executable form, for the **internal** needs of its business, **in a single establishment**. The license is free during the alpha phase and for the initial panel; any change (for example a fee) will be agreed before a renewal.
+The Licensor grants the Licensee a **non-exclusive, personal and non-transferable** right to use Fluxio, in its executable form, for the **internal** needs of its business, **in a single establishment**. The license is **free of charge**.
 
 ## 3. Term and expiry
 
@@ -32,7 +32,7 @@ The source code is not supplied with the commercial license. It can be shared on
 
 Fluxio is provided **as is**, as an **alpha version**, without warranty of any kind, including the accuracy of document reading or calculations. It is a **management aid**: the Licensee alone remains responsible for its accounting, its tax and social filings, the checking of the figures displayed and the **backup of its data**.
 
-To the extent permitted by law, the Licensor is not liable for any indirect damage (loss of business, revenue or data, penalties or tax adjustments) and, for other damage, liability is limited to the amount actually paid for the license, i.e. zero while the license is free. Nothing in these conditions excludes a liability that cannot be excluded by law.
+To the extent permitted by law, the Licensor is not liable for any indirect damage (loss of business, revenue or data, penalties or tax adjustments) and, for other damage, liability is limited to the amount actually paid for the license, the license being free of charge, that amount is zero. Nothing in these conditions excludes a liability that cannot be excluded by law.
 
 ## 7. Data
 
@@ -52,4 +52,4 @@ Installing the license file in Fluxio, after ticking "I have read and accept the
 
 ## Requesting a license
 
-Licenses are currently granted to a selected panel. To be considered, open a request on the [Issues](../../issues) page with the "Commercial license request" template, **without putting any personal data in it** (the shop name and town are enough): the author will contact you to collect the necessary information.
+Licenses are granted to a selection of shops. To be considered, open a request on the [Issues](../../issues) page with the "Commercial license request" template, **without putting any personal data in it** (the shop name and town are enough): the author will contact you to collect the necessary information.

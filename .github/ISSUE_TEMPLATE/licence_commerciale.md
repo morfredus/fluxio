@@ -7,7 +7,7 @@ assignees: ''
 
 ---
 
-Commercial licenses are currently free and granted to a selected panel (see `LICENCE-COMMERCIALE.md`). / Les licences commerciales sont pour l'instant gratuites et accordees a un panel choisi (voir `LICENCE-COMMERCIALE_fr.md`).
+Commercial licenses are free and granted to a selection of shops (see `LICENCE-COMMERCIALE.md`). / Les licences commerciales sont gratuites et accordees a une selection de commerces (voir `LICENCE-COMMERCIALE_fr.md`).
 
 **Shop name and town / Nom du commerce et ville**
 

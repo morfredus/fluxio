@@ -2,6 +2,12 @@
 
 ## [Unreleased]
 
+## [0.1.0-alpha.25] - 2026-11-26
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Licence commerciale : la formulation « gratuite pour l'instant, panel choisi » est remplacée par « gratuite, accordée à une sélection de commerces » (fenêtre de licence, conditions `LICENCE-COMMERCIALE` en français et anglais, README et vitrine, modèle de demande). Les conditions ne prévoient plus de redevance future : la licence est gratuite, et la limite de responsabilité en tient compte.
+
 ## [0.1.0-alpha.24] - 2026-11-26
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
@@ -14,7 +20,7 @@
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
 
-- Licence commerciale par fichier : un commerce ou une entreprise installe un fichier `licence.fluxio` nominatif (raison sociale, forme juridique, SIRET, responsable, adresse, e-mail, identifiant, dates), délivré par l'auteur, gratuit pour l'instant et valable 12 mois renouvelables. Le fichier est signé (Ed25519, implémentation Python pure sans nouvelle dépendance) et vérifié hors ligne avec une clé publique embarquée ; la clé privée et le registre des licences émises restent chez l'auteur, hors dépôt.
+- Licence commerciale par fichier : un commerce ou une entreprise installe un fichier `licence.fluxio` nominatif (raison sociale, forme juridique, SIRET, responsable, adresse, e-mail, identifiant, dates), délivré par l'auteur, gratuit et valable 12 mois renouvelables. Le fichier est signé (Ed25519, implémentation Python pure sans nouvelle dépendance) et vérifié hors ligne avec une clé publique embarquée ; la clé privée et le registre des licences émises restent chez l'auteur, hors dépôt.
 - Au lancement, si ni licence ni déclaration n'existent, Fluxio propose d'installer le fichier (après acceptation des conditions) ou de déclarer un usage non commercial (libre, PolyForm Noncommercial 1.0.0, sans fichier) ; « Plus tard » continue sans rien enregistrer. Menu Réglages → « Licence… » pour renouveler ou changer.
 - Bandeau dans la barre d'état (titulaire et validité, ou « Usage non commercial ») et titulaire dans le titre de la fenêtre. SIRET du fichier différent de celui des réglages, expiration dans 30 jours ou moins, expiration passée dans les 30 jours de tolérance : simple avertissement. Une licence absente, invalide ou expirée ne bloque aucune fonction et ne touche à aucune donnée ; elle ajoute seulement la mention « Fluxio : usage non commercial » aux PDF et impressions.
 - Outil de l'auteur `scripts/emettre_licence.py` (clé, émettre, vérifier, liste) ; conditions publiées `docs/vitrine/LICENCE-COMMERCIALE.md` et `_fr.md` (copiées à la racine de la vitrine par `sync-fluxio-to-prod.ps1`), modèle d'issue « Demande de licence commerciale », notices tierces (code de référence du RFC 8032).
