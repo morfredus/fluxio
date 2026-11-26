@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## [0.1.0-alpha.24] - 2026-11-26
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Fenêtre de licence : deux liens ajoutés dans le bloc « Usage commercial » : « Demander une licence commerciale » (ouvre le modèle de demande de la vitrine publique, sans aucune donnée envoyée par Fluxio) et « Lire les conditions complètes » (français ou anglais selon la langue de l'interface).
+
+- Outil de l'auteur (non livré) : `scripts/emettre_licence.py emettre` sans option pose les questions une par une (raison sociale, forme juridique, SIRET, responsable, adresse, e-mail, durée) puis demande confirmation ; les options de la ligne de commande restent possibles, et sans clavier l'outil refuse d'émettre avec des champs manquants.
+
 ## [0.1.0-alpha.23] - 2026-11-26
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
