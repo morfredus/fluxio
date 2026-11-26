@@ -21,7 +21,7 @@ Récupérez la dernière version sur la page [Releases](../../releases) : soit *
 
 ## Licence
 
-Fluxio est sous licence **[PolyForm Noncommercial 1.0.0](LICENSE)** : usage non commercial autorisé (personnel, étude, recherche, associations, écoles...). **L'usage commercial est interdit** sans licence séparée de l'auteur. Les composants tiers gardent leurs propres licences : voir [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
+Fluxio est sous licence **[PolyForm Noncommercial 1.0.0](LICENSE)** : usage non commercial autorisé (personnel, étude, recherche, associations, écoles...). **L'usage commercial (un commerce, une entreprise) exige une licence commerciale** délivrée par l'auteur sous la forme d'un fichier : voir [LICENCE-COMMERCIALE_fr.md](LICENCE-COMMERCIALE_fr.md) (gratuite pour l'instant, panel choisi). Au lancement, Fluxio demande d'installer ce fichier ou de déclarer un usage non commercial ; une licence absente ou expirée ne bloque rien et ne fait perdre aucune donnée. Les composants tiers gardent leurs propres licences : voir [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).
 
 ## Code source
 

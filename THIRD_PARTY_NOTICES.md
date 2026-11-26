@@ -12,6 +12,7 @@ cette licence ne s'applique pas aux composants tiers ci-dessous, qui gardent leu
 | **PyInstaller** | builds the executable (its bootloader is bundled) | GPL-2.0-or-later with the PyInstaller exception, which allows bundling in programs under any license |
 | **Python** | runtime | PSF License |
 | **SQLite** | local database | Public domain |
+| **Ed25519 reference code** (RFC 8032) | `src/ed25519.py`, verification of license files (adapted) | Simplified BSD License (IETF Trust, RFC 8032) |
 
 ## Qt (LGPL-3.0): your rights / vos droits
 

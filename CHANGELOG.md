@@ -2,6 +2,20 @@
 
 ## [Unreleased]
 
+## [0.1.0-alpha.23] - 2026-11-26
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Licence commerciale par fichier : un commerce ou une entreprise installe un fichier `licence.fluxio` nominatif (raison sociale, forme juridique, SIRET, responsable, adresse, e-mail, identifiant, dates), délivré par l'auteur, gratuit pour l'instant et valable 12 mois renouvelables. Le fichier est signé (Ed25519, implémentation Python pure sans nouvelle dépendance) et vérifié hors ligne avec une clé publique embarquée ; la clé privée et le registre des licences émises restent chez l'auteur, hors dépôt.
+- Au lancement, si ni licence ni déclaration n'existent, Fluxio propose d'installer le fichier (après acceptation des conditions) ou de déclarer un usage non commercial (libre, PolyForm Noncommercial 1.0.0, sans fichier) ; « Plus tard » continue sans rien enregistrer. Menu Réglages → « Licence… » pour renouveler ou changer.
+- Bandeau dans la barre d'état (titulaire et validité, ou « Usage non commercial ») et titulaire dans le titre de la fenêtre. SIRET du fichier différent de celui des réglages, expiration dans 30 jours ou moins, expiration passée dans les 30 jours de tolérance : simple avertissement. Une licence absente, invalide ou expirée ne bloque aucune fonction et ne touche à aucune donnée ; elle ajoute seulement la mention « Fluxio : usage non commercial » aux PDF et impressions.
+- Outil de l'auteur `scripts/emettre_licence.py` (clé, émettre, vérifier, liste) ; conditions publiées `docs/vitrine/LICENCE-COMMERCIALE.md` et `_fr.md` (copiées à la racine de la vitrine par `sync-fluxio-to-prod.ps1`), modèle d'issue « Demande de licence commerciale », notices tierces (code de référence du RFC 8032).
+## [0.1.0-alpha.22] - 2026-11-20
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Lancement : le focus n'était toujours pas pris quand on avait cliqué ailleurs pendant le chargement (l'icône clignotait dans la barre des tâches). Windows n'autorise le changement de fenêtre active qu'au processus qui a reçu la dernière saisie : Fluxio se rattache maintenant au fil d'entrée de la fenêtre active (AttachThreadInput) avant de s'activer, avec en dernier recours une frappe de la touche Alt, et refait une tentative 0,4 s plus tard si la fenêtre n'est pas active.
+- Réglages : le choix du séparateur CSV (virgule, point-virgule ou demander à chaque export) existait depuis l'alpha.20 mais était difficile à trouver ; le menu devient « Société, exercice, langue et exports CSV… », la fenêtre porte le même titre et la boîte de l'export rappelle où le régler.
 ## [0.1.0-alpha.21] - 2026-11-20
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
