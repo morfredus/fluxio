@@ -19,6 +19,10 @@ Récupérez la dernière version sur la page [Releases](../../releases) : soit *
 - La liste de gauche se filtre : case « Seulement les non validés » et bouton pour masquer ou afficher les documents « Information ».
 - La langue (français / anglais) se choisit dans les réglages et s'applique au prochain lancement.
 
+## Guide d'utilisation
+
+Un [guide d'utilisation](GUIDE_fr.md) court explique le démarrage en 6 étapes, chaque écran, les rapprochements, les exports, les sauvegardes et les problèmes fréquents.
+
 ## Licence
 
 Fluxio est sous licence **[PolyForm Noncommercial 1.0.0](LICENSE)** : usage non commercial autorisé (personnel, étude, recherche, associations, écoles...). **L'usage commercial (un commerce, une entreprise) exige une licence commerciale** délivrée par l'auteur sous la forme d'un fichier : voir [LICENCE-COMMERCIALE_fr.md](LICENCE-COMMERCIALE_fr.md) (gratuite, accordée à une sélection de commerces). Au lancement, Fluxio demande d'installer ce fichier ou de déclarer un usage non commercial ; une licence absente ou expirée ne bloque rien et ne fait perdre aucune donnée. Les composants tiers gardent leurs propres licences : voir [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

@@ -19,6 +19,10 @@ Get the latest release from the [Releases](../../releases) page: either **`Fluxi
 - Your data lives in `%APPDATA%\Fluxio\fluxio.db`, outside the program folder: updating never touches it. To back up, copy that file.
 - The language (French / English) is chosen in the settings and applied at the next start.
 
+## User guide
+
+A short [user guide](GUIDE.md) covers getting started in 6 steps, each screen, reconciliations, exports, backups and common problems.
+
 ## License
 
 Fluxio is licensed under the **[PolyForm Noncommercial License 1.0.0](LICENSE)**: you may use it for non-commercial purposes (personal use, study, research, charities, schools...). **Commercial use (a shop, a company) requires a commercial license** issued by the author as a file: see [LICENCE-COMMERCIALE.md](LICENCE-COMMERCIALE.md) (free, granted to a selection of shops). At start-up Fluxio asks you to install that file or to declare non-commercial use; a missing or expired license blocks nothing and loses no data. Without it, commercial use is not allowed. Third-party components keep their own licenses: see [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md).

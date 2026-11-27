@@ -2,6 +2,14 @@
 
 ## [Unreleased]
 
+## [0.1.0-alpha.26] - 2026-11-27
+
+**Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
+
+- Documentation : guide d'utilisation en français et en anglais (`docs/vitrine/GUIDE_fr.md`, `GUIDE.md`) : démarrage en 6 étapes, écran principal, types de documents, rapprochements, trésorerie, exports, sauvegardes, réglages, licence, problèmes fréquents. Il est copié à la racine de la vitrine par `sync-fluxio-to-prod.ps1` et cité dans les README.
+- Test `tests/test_guide.py` : chaque chemin de menu cité en gras dans le guide (« Menu → Commande ») doit exister dans l'interface, en français comme en anglais ; le guide ne peut plus dériver sans que les tests le signalent.
+- Aucun changement du programme lui-même.
+
 ## [0.1.0-alpha.25] - 2026-11-26
 
 **Alpha** : toujours pas éprouvée en conditions réelles ; vérifiez les chiffres.
